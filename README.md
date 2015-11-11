@@ -5,7 +5,9 @@ up. I use it where connection is poor.
 
 # Installation
 
-* Install `terminal-notifier` using homebrew `$ brew install terminal-notifier`
+* Install `terminal-notifier`
+  * Homebrew: `$ brew install terminal-notifier`
+  * MacPorts: `# port install terminal-notifier`
 * Install requests `pip install requests`
 * Clone this repo
 * Execute the application `./check_conn&`
