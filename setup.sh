@@ -1,9 +1,9 @@
-#! /bin/sh
+#!/bin/sh
 
 # Install the required packages from pip
 if type pip > /dev/null 2>&1; then
   sudo -H pip install -r requirements.txt
-else 
+else
   echo "Could not find 'pip'"
   exit
 fi
@@ -12,9 +12,9 @@ fi
 if type brew > /dev/null 2>&1; then
   brew install terminal-notifier
 # What about macports?
-elif type ports > /dev/null 2>&1; then
-  ports install terminal-notifier
-else 
+elif type port > /dev/null 2>&1; then
+  sudo port install terminal-notifier
+else
   echo "Unable to locate 'Homebrew' or 'MacPorts'"
   exit
 fi
